@@ -1,0 +1,23 @@
+environment:
+  - name: DEV
+    type: bool
+    default: True
+
+  - name: LOG_LEVEL
+    type: str
+    default: INFO
+
+  - name: MAXMIND_LICENSE_KEY
+    type: str
+
+  - name: MATCH_TOPIC
+    type: bytes
+    default: s2.matchquality.2
+
+  - name: MATCH_BATCH_SIZE
+    type: int
+    default: 100
+
+  - name: KAFKA_BOOTSTRAP_SERVERS
+    type: str
+    default: internal-PRD1KAFKA-1272792231.us-west-2.elb.amazonaws.com:9092
